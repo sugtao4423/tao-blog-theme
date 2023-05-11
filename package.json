@@ -18,6 +18,11 @@
     "name": "sugtao4423",
     "email": "author@example.com"
   },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
   "devDependencies": {
     "gscan": "^4.36.2",
     "prettier": "^2.8.8"

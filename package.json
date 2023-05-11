@@ -15,7 +15,7 @@
     "build:sass": "./shell/cssbuilder.sh 2>&1",
     "test": "gscan --fatal --verbose .",
     "format": "prettier --check '**/*.{hbs,css,scss,json}'",
-    "zip": "rm -f tao-blog-theme.zip && zip -r tao-blog-theme.zip . -x '.*' -x 'node_modules/*' -x 'yarn.lock'"
+    "zip": "./shell/zipper.sh"
   },
   "author": {
     "name": "sugtao4423",

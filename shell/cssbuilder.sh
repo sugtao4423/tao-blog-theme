@@ -16,6 +16,14 @@ sass $watchScssPath:$tempCompiledCssPath \
   --style=compressed \
   --no-source-map $watch &
 
+while :
+do
+  sleep 0.1
+  if [ -f $tempCompiledCssPath ]; then
+    break
+  fi
+done
+
 postcss $tempCompiledCssPath \
   -u autoprefixer postcss-combine-media-query \
   --no-map \

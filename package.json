@@ -11,6 +11,8 @@
     "mobile": "assets/screenshot-mobile.jpg"
   },
   "scripts": {
+    "dev": "./shell/cssbuilder.sh --watch 2>&1",
+    "build:sass": "./shell/cssbuilder.sh 2>&1",
     "test": "gscan --fatal --verbose .",
     "format": "prettier --check '**/*.{hbs,css,scss,json}'",
     "zip": "rm -f tao-blog-theme.zip && zip -r tao-blog-theme.zip . -x '.*' -x 'node_modules/*' -x 'yarn.lock'"
@@ -25,9 +27,20 @@
     "ghost-theme"
   ],
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "gscan": "^4.36.2",
-    "prettier": "^2.8.8"
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-combine-media-query": "^1.0.1",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1"
   },
+  "browserslist": [
+    "> 2%",
+    "ios >= 15",
+    "last 3 versions",
+    "not dead"
+  ],
   "config": {
     "posts_per_page": 10,
     "image_sizes": {

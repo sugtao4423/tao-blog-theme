@@ -11,13 +11,15 @@
     "mobile": "assets/screenshot-mobile.jpg"
   },
   "scripts": {
-    "test": "gscan --fatal --verbose ."
+    "test": "gscan --fatal --verbose .",
+    "format": "prettier --check '**/*.{hbs,css,scss,json}'"
   },
   "author": {
     "name": "sugtao4423"
   },
   "devDependencies": {
-    "gscan": "^4.36.2"
+    "gscan": "^4.36.2",
+    "prettier": "^2.8.8"
   },
   "config": {
     "posts_per_page": 10,

@@ -15,7 +15,8 @@
     "format": "prettier --check '**/*.{hbs,css,scss,json}'"
   },
   "author": {
-    "name": "sugtao4423"
+    "name": "sugtao4423",
+    "email": "author@example.com"
   },
   "devDependencies": {
     "gscan": "^4.36.2",

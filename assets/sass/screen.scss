@@ -1,1 +1,24 @@
 @charset "utf-8";
+
+@import '../../node_modules/bootstrap/scss/functions';
+
+$body-bg: #c0e8e8;
+$font-family-sans-serif: -apple-system, 'BlinkMacSystemFont',
+  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif,
+  'Segoe UI Emoji';
+$font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+  Liberation Mono, monospace;
+
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+
+// Required by ghost
+.kg-width-wide,
+.kg-width-full {
+  display: block;
+}

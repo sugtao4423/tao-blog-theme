@@ -1,0 +1,18 @@
+.site-footer {
+  color: $footer-text-color;
+  background-color: $ribbon-color;
+
+  &__inner {
+    @extend .container;
+    text-align: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+    font-size: 0.9rem;
+
+    a {
+      color: #cfcfcf;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.site-header {
+  height: 6rem;
+  background-image: url(../images/titleback.jpg);
+
+  &__inner {
+    @extend .container;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .site-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .gh-search {
+      appearance: unset;
+      background: none;
+      border: none;
+      padding: 0;
+
+      display: flex;
+
+      .text {
+        color: #fff;
+        margin-right: 0.4rem;
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+
+      .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(../icons/search.svg) no-repeat center/contain;
+      }
+    }
+  }
+
+  &__divider {
+    height: 4px;
+    background-color: $ribbon-color;
+  }
+}

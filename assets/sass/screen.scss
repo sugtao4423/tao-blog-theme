@@ -26,3 +26,13 @@ $link-hover-decoration: underline;
 .kg-width-full {
   display: block;
 }
+
+@import './variables';
+@import './default/header';
+@import './default/footer';
+
+.site-main {
+  @extend .container;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}

@@ -9,6 +9,10 @@ $font-family-sans-serif: -apple-system, 'BlinkMacSystemFont',
 $font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
   Liberation Mono, monospace;
 
+$link-color: #2ac738;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/maps';
 @import '../../node_modules/bootstrap/scss/mixins';

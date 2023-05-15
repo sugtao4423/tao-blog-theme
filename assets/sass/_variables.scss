@@ -1,3 +1,17 @@
-$ribbon-color: #2b7bb9 !default;
+// Override Bootstrap variables
+$body-bg: #c0e8e8;
+$font-family-sans-serif: -apple-system, 'BlinkMacSystemFont',
+  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif,
+  'Segoe UI Emoji';
+$font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+  Liberation Mono, monospace;
 
-$footer-text-color: #979494 !default;
+$link-color: #2ac738;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+// Custom variables
+$ribbon-color: #2b7bb9;
+
+$footer-text-color: #979494;
+$footer-link-color: #cfcfcf;

@@ -2,16 +2,7 @@
 
 @import '../../node_modules/bootstrap/scss/functions';
 
-$body-bg: #c0e8e8;
-$font-family-sans-serif: -apple-system, 'BlinkMacSystemFont',
-  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif,
-  'Segoe UI Emoji';
-$font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-  Liberation Mono, monospace;
-
-$link-color: #2ac738;
-$link-decoration: none;
-$link-hover-decoration: underline;
+@import './variables';
 
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/maps';
@@ -27,7 +18,6 @@ $link-hover-decoration: underline;
   display: block;
 }
 
-@import './variables';
 @import './default/header';
 @import './default/footer';
 

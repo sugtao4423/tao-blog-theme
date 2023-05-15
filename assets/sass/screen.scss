@@ -18,8 +18,14 @@
   display: block;
 }
 
+img {
+  width: 100%;
+}
+
 @import './default/header';
 @import './default/footer';
+
+@import './index';
 
 .site-main {
   @extend .container;

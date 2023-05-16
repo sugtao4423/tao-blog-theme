@@ -1,6 +1,10 @@
 {{!< default}}
 <div class="index-page">
-  <div class="post-list"></div>
+  <div class="post-list">
+    {{#foreach posts}}
+      {{> "post-card"}}
+    {{/foreach}}
+  </div>
   <div class="profile">
     <div class="profile__title">プロフィール</div>
     <div class="profile__image">

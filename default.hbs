@@ -28,7 +28,23 @@
       <div class="site-header__divider"></div>
     </header>
 
-    <div class="site-main">{{{body}}}</div>
+    <div class="site-main">
+      <div class="site-main__inner">
+        <div class="main-content">{{{body}}}</div>
+        <div class="profile">
+          <div class="profile__title">プロフィール</div>
+          <div class="profile__image">
+            <img src="{{asset 'images/sugtao4423.jpg'}}" alt="sugtao4423" />
+          </div>
+          <div class="profile__text">
+            名前: tao<br />
+            Twitter: <a href="https://twitter.com/sugtao4423">@sugtao4423</a
+            ><br />
+            どこ住み？: 東京23区外
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <div class="site-footer__inner">

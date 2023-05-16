@@ -1,5 +1,5 @@
 .post-card {
-  background-color: #fff;
+  background-color: $post-card-bg-color;
   padding: 1rem;
 
   & + & {
@@ -18,7 +18,7 @@
   .info {
     display: flex;
     align-items: flex-start;
-    color: $gray-600;
+    color: $post-card-info-text-color;
     font-size: 0.95rem;
 
     %icon-text {
@@ -31,7 +31,7 @@
         width: 1em;
         height: 1em;
         margin-right: 4px;
-        background-color: $gray-600;
+        background-color: $post-card-info-text-color;
         mask-repeat: no-repeat;
       }
     }

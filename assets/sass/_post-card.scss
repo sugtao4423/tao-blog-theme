@@ -1,0 +1,91 @@
+.post-card {
+  background-color: #fff;
+  padding: 1rem;
+
+  & + & {
+    margin-top: 1.6rem;
+  }
+
+  a {
+    color: unset;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .info {
+    display: flex;
+    align-items: flex-start;
+    color: $gray-600;
+    font-size: 0.95rem;
+
+    %icon-text {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 1em;
+        height: 1em;
+        margin-right: 4px;
+        background-color: $gray-600;
+        mask-repeat: no-repeat;
+      }
+    }
+
+    .date {
+      @extend %icon-text;
+
+      &::before {
+        mask-image: url(../icons/clock.svg);
+      }
+    }
+
+    .tags {
+      @extend %icon-text;
+      flex-wrap: wrap;
+      margin-left: 1rem;
+
+      &::before {
+        mask-image: url(../icons/tag.svg);
+      }
+
+      a + a {
+        margin-left: 0.6rem;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .body {
+    display: flex;
+    margin-top: 0.6rem;
+
+    %thumbnail-size {
+      width: 150px;
+      height: 150px;
+      max-width: 28vw;
+      max-height: 28vw;
+    }
+
+    .thumbnail {
+      @extend %thumbnail-size;
+
+      img {
+        @extend %thumbnail-size;
+        object-fit: cover;
+      }
+    }
+
+    .excerpt {
+      margin-left: 1rem;
+      max-height: calc($line-height-base * 6em);
+      overflow: hidden;
+    }
+  }
+}

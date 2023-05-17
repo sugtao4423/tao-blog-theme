@@ -17,51 +17,8 @@
     font-weight: 700;
   }
 
-  .info {
-    display: flex;
-    align-items: flex-start;
-    color: $post-card-info-text-color;
-    font-size: 0.95rem;
-
-    %icon-text {
-      display: flex;
-      align-items: center;
-
-      &::before {
-        content: '';
-        display: block;
-        width: 1em;
-        height: 1em;
-        margin-right: 4px;
-        background-color: $post-card-info-text-color;
-        mask-repeat: no-repeat;
-      }
-    }
-
-    .date {
-      @extend %icon-text;
-
-      &::before {
-        mask-image: url(../icons/clock.svg);
-      }
-    }
-
-    .tags {
-      @extend %icon-text;
-      flex-wrap: wrap;
-      margin-left: 1rem;
-
-      &::before {
-        mask-image: url(../icons/tag.svg);
-      }
-
-      a + a {
-        margin-left: 0.6rem;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    }
+  .metadata {
+    @extend %post-metadata;
   }
 
   .body {

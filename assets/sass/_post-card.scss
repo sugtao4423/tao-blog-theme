@@ -1,6 +1,8 @@
 .post-card {
   background-color: $post-card-bg-color;
   padding: 1rem;
+  border: $post-card-border;
+  border-radius: 4px;
 
   & + & {
     margin-top: 1.6rem;

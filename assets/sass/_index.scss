@@ -1,0 +1,32 @@
+.post-list {
+  #pagination {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    > * + * {
+      margin-left: 0.5rem;
+    }
+
+    a {
+      color: $pagination-text-color;
+    }
+
+    .page {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: $pagination-bg-color;
+      border: $pagination-border;
+
+      &.current {
+        color: $pagination-active-text-color;
+        background-color: $pagination-active-bg-color;
+      }
+    }
+  }
+}

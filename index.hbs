@@ -3,4 +3,17 @@
   {{#foreach posts}}
     {{> "post-card"}}
   {{/foreach}}
+
+  <nav id="pagination"></nav>
+
+  <script src="{{asset 'js/pagination.js'}}"></script>
+  {{#with pagination}}
+  <script>
+    const el = document.getElementById('pagination')
+    const page = Number("{{page}}")
+    const pages = Number("{{pages}}")
+    const createPageUrl = (num) => `{{page_url}}page/${num}/`
+    appendPagination(el, page, pages, createPageUrl)
+  </script>
+  {{/with}}
 </div>

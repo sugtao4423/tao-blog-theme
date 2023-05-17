@@ -1,4 +1,4 @@
-%post-metadata {
+.post-metadata {
   display: flex;
   align-items: flex-start;
   color: $post-meta-text-color;
@@ -36,11 +36,11 @@
       mask-image: url(../icons/tag.svg);
     }
 
+    a {
+      color: unset;
+    }
     a + a {
       margin-left: 0.6rem;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   }
 }

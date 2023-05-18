@@ -1,8 +1,13 @@
 .post {
-  padding: 0.4rem 1.5rem 1rem;
+  padding: 0.4rem 1rem 1rem;
   background-color: $post-bg-color;
   border: $post-border;
   border-radius: 4px;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 
   .reading-time {
     color: $post-reading-time-text-color;

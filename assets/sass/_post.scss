@@ -1,0 +1,23 @@
+.post {
+  padding: 0.4rem 1.5rem 1rem;
+  background-color: $post-bg-color;
+  border: $post-border;
+  border-radius: 4px;
+
+  .reading-time {
+    color: $post-reading-time-text-color;
+    font-size: 0.85rem;
+    text-align: right;
+    font-style: italic;
+  }
+
+  .title {
+    font-weight: 700;
+  }
+
+  .content {
+    margin-top: 0.8rem;
+
+    @import './post-content/all';
+  }
+}

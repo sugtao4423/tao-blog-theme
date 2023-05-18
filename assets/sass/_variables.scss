@@ -35,3 +35,9 @@ $post-border: 1px solid $post-border-color;
 
 $footer-text-color: #979494;
 $footer-link-color: #cfcfcf;
+
+// Post content
+$pre-bg-color: #f6f8fa;
+$code-bg-color: rgba(175, 184, 193, 0.2);
+$code-font-size: 85%; // Override Bootstrap
+$code-color: #1f2328; // Override Bootstrap

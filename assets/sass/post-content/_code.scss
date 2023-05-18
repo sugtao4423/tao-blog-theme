@@ -1,0 +1,22 @@
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  white-space: break-spaces;
+  background-color: $code-bg-color;
+  border-radius: 6px;
+}
+
+pre {
+  padding: 16px;
+  color: $code-color;
+  background-color: $pre-bg-color;
+  border-radius: 6px;
+  max-height: 44.5em;
+
+  code {
+    padding: 0;
+    margin: 0;
+    word-wrap: normal;
+    background-color: transparent;
+  }
+}

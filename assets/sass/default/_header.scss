@@ -28,10 +28,11 @@
       display: flex;
 
       .text {
+        display: none;
         color: #fff;
         margin-right: 0.4rem;
-        @include media-breakpoint-down(md) {
-          display: none;
+        @include media-breakpoint-up(md) {
+          display: block;
         }
       }
 

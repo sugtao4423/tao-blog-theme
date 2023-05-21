@@ -10,8 +10,17 @@
     "desktop": "assets/screenshot-desktop.jpg",
     "mobile": "assets/screenshot-mobile.jpg"
   },
+  "watch": {
+    "build:sass": {
+      "patterns": [
+        "assets/sass"
+      ],
+      "extensions": "sass,scss",
+      "quiet": false
+    }
+  },
   "scripts": {
-    "dev": "./shell/cssbuilder.sh --watch 2>&1",
+    "dev": "npm-watch",
     "build:sass": "./shell/cssbuilder.sh 2>&1",
     "test": "gscan --fatal --verbose .",
     "format": "prettier --check '**/*.{hbs,css,scss,json}'",

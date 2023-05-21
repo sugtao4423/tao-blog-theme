@@ -8,5 +8,4 @@ zip -r $ZIP_NAME . \
   -x 'node_modules/*' \
   -x 'yarn.lock' \
   -x 'shell/*' \
-  -x 'assets/sass/*' \
-  -x 'assets/css/built.min.css'
+  -x 'assets/sass/*'

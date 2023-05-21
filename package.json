@@ -17,11 +17,19 @@
       ],
       "extensions": "sass,scss",
       "quiet": false
+    },
+    "build:js": {
+      "patterns": [
+        "assets/js/lib"
+      ],
+      "extensions": "js",
+      "quiet": false
     }
   },
   "scripts": {
     "dev": "npm-watch",
     "build:sass": "./shell/cssbuilder.sh 2>&1",
+    "build:js": "./shell/jsbuilder.sh 2>&1",
     "test": "gscan --fatal --verbose .",
     "format": "prettier --check '**/*.{hbs,css,scss,json}'",
     "zip": "./shell/zipper.sh"

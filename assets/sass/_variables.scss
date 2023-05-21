@@ -37,7 +37,16 @@ $footer-text-color: #979494;
 $footer-link-color: #cfcfcf;
 
 // Post content
+// pre code
 $pre-bg-color: #f6f8fa;
 $code-bg-color: rgba(175, 184, 193, 0.2);
 $code-font-size: 85%; // Override Bootstrap
 $code-color: #1f2328; // Override Bootstrap
+
+// bookmark
+$bookmark-bg-color: #fff;
+$bookmark-bg-hover-color: rgba(239, 246, 251, 0.7);
+$bookmark-border-color: rgba(92, 147, 187, 0.2);
+$bookmark-border: 1px solid $bookmark-border-color;
+$bookmark-description-text-color: #77838c;
+$bookmark-metadata-text-color: rgba(0, 0, 0, 0.8);

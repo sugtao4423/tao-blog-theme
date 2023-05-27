@@ -1,3 +1,22 @@
+.tag-page.tag-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0.9em;
+    height: 0.9em;
+    background-color: $tag-page-icon-color;
+    mask-image: url(../icons/tag.svg);
+    mask-repeat: no-repeat;
+    margin-right: 0.4rem;
+  }
+}
+
 .post-list {
   #pagination {
     margin-top: 1.6rem;

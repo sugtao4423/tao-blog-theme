@@ -1,4 +1,7 @@
 {{!< default}}
+{{#is 'tag'}}
+<div class="tag-page tag-name">{{tag.name}}</div>
+{{/is}}
 <div class="post-list">
   {{#foreach posts}}
     {{> "post-card"}}

@@ -1,0 +1,64 @@
+.profile {
+  padding: 1rem;
+  background-color: $profile-bg-color;
+  border-radius: 4px;
+  border: $profile-border;
+  display: flex;
+  align-items: center;
+
+  width: 40%;
+  min-width: 10rem;
+  margin: 0 0 0 auto;
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+
+  &__image {
+    width: 30%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+
+  &__text {
+    margin-left: 0.6rem;
+  }
+
+  &__links {
+    margin-top: 0.4rem;
+    display: flex;
+
+    & > * {
+      width: 1rem;
+      height: 1rem;
+
+      & + * {
+        margin-left: 0.4rem;
+      }
+    }
+
+    .icon {
+      width: inherit;
+      height: inherit;
+      background-color: $profile-icon-color;
+      mask-repeat: no-repeat;
+
+      &:hover {
+        background-color: $profile-icon-hover-color;
+      }
+    }
+
+    .homepage {
+      mask-image: url(../icons/house.svg);
+    }
+    .twitter {
+      mask-image: url(../icons/twitter.svg);
+    }
+    .github {
+      mask-image: url(../icons/github.svg);
+    }
+  }
+}

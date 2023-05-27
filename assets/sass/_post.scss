@@ -25,4 +25,49 @@
 
     @import './post-content/all';
   }
+
+  .share {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+
+    .twitter-share {
+      padding: 0.2rem 0.8rem;
+      color: $share-text-color;
+      background-color: $share-bg-color;
+      border: $share-border;
+      border-radius: 6rem;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        color: $share-text-hover-color;
+        background-color: $share-bg-hover-color;
+
+        .tweet-icon::before {
+          background-color: $share-text-hover-color;
+        }
+      }
+
+      .tweet-icon {
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          margin-right: 0.4rem;
+          background-color: $share-text-color;
+          mask-image: url(../icons/twitter.svg);
+          mask-repeat: no-repeat;
+        }
+
+        &::after {
+          content: 'ツイート';
+        }
+      }
+    }
+  }
 }

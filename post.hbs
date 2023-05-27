@@ -8,6 +8,15 @@
       {{> "post-metadata" dateFormat="YYYY/MM/DD HH:mm"}}
     </header>
     <div class="content">{{content}}</div>
+    <div class="share">
+      <a
+        class="twitter-share"
+        href="https://twitter.com/intent/tweet?text={{encode (concat title '-' @site.title separator=' ')}}&url={{encode (url absolute='true')}}"
+        target="_blank"
+        rel="noopener noreferrer">
+        <div class="tweet-icon"></div>
+      </a>
+    </div>
   </article>
 </main>
 {{/post}}

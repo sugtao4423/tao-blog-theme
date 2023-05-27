@@ -1,0 +1,24 @@
+table {
+  max-width: max-content;
+  margin-bottom: 1rem;
+
+  tr {
+    border-top: $table-border;
+    background-color: $table-bg-color;
+
+    &:nth-child(2n) {
+      background-color: $table-bg-2n-color;
+    }
+  }
+
+  th,
+  td {
+    border: $table-border;
+    padding: 6px 13px;
+  }
+
+  th {
+    font-weight: 700;
+    text-align: center;
+  }
+}

@@ -38,10 +38,20 @@
         <div class="sidebar">
           <div class="profile">
             <div class="profile__image">
-              <img
-                src="{{asset 'images/sugtao4423-w150.jpg'}}"
-                alt="sugtao4423"
-              />
+              <picture>
+                <source
+                  srcset="{{asset 'images/sugtao4423-w150.avif'}}"
+                  type="image/avif"
+                />
+                <source
+                  srcset="{{asset 'images/sugtao4423-w150.webp'}}"
+                  type="image/webp"
+                />
+                <img
+                  src="{{asset 'images/sugtao4423-w150.jpg'}}"
+                  alt="sugtao4423"
+                />
+              </picture>
             </div>
             <div class="profile__text">
               <div class="profile__name">tao</div>

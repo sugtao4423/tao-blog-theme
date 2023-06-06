@@ -1,6 +1,11 @@
 .site-header {
   height: 6rem;
   background-image: url(../images/titleback.jpg);
+  background-image: image-set(
+    url(../images/titleback.avif) type('image/avif'),
+    url(../images/titleback.webp) type('image/webp'),
+    url(../images/titleback.jpg) type('image/jpeg')
+  );
 
   &__inner {
     @extend .container;

@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{@site.locale}}">
   <head>
+    {{#is 'post, page'}}
+    <title>{{meta_title}} - {{@site.title}}</title>
+    {{else}}
     <title>{{meta_title}}</title>
+    {{/is}}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 

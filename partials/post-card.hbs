@@ -9,11 +9,21 @@
     <div class="thumbnail">
       <a href="{{url}}">
         {{#if feature_image}}
-        <img
-          src="{{img_url feature_image size="s"}}"
-          alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="{{img_url feature_image size="s" format="avif"}}"
+            type="image/avif"
+          />
+          <source
+            srcset="{{img_url feature_image size="s" format="webp"}}"
+            type="image/webp"
+          />
+          <img
+            src="{{img_url feature_image size="s"}}"
+            alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+            loading="lazy"
+          />
+        </picture>
         {{else}}
         <img
           src="{{asset 'images/noimage.png'}}"

@@ -1,5 +1,7 @@
 table {
-  max-width: max-content;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
   margin-bottom: 1rem;
 
   tr {

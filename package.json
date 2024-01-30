@@ -44,15 +44,15 @@
     "ghost-theme"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.17",
     "bootstrap": "^5.2.3",
-    "gscan": "^4.39.4",
+    "gscan": "^4.42.0",
     "npm-watch": "^0.11.0",
-    "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
     "postcss-combine-media-query": "^1.0.1",
-    "prettier": "^2.8.8",
-    "sass": "^1.69.4",
+    "prettier": "^3.2.4",
+    "sass": "^1.70.0",
     "uglify-js": "^3.17.4"
   },
   "browserslist": [

@@ -5,7 +5,8 @@ cssPath='assets/css/screen.min.css'
 
 sass $scssPath:$cssPath \
   --style=compressed \
-  --no-source-map
+  --no-source-map \
+  --silence-deprecation abs-percent,color-functions,global-builtin,import,mixed-decls
 
 postcss $cssPath \
   -u autoprefixer postcss-combine-media-query \

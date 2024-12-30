@@ -2,11 +2,13 @@ img {
   width: 100%;
   height: auto;
 
-  @include media-breakpoint-up(sm) {
-    width: 80%;
-  }
-  @include media-breakpoint-up(lg) {
-    width: 60%;
+  &:not(table img) {
+    @include media-breakpoint-up(sm) {
+      width: 80%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 60%;
+    }
   }
 }
 

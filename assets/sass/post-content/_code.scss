@@ -12,11 +12,12 @@ pre {
   background-color: $pre-bg-color;
   border-radius: 6px;
   max-height: 44.5em;
+  overflow: auto;
 
   code {
     padding: 0;
     margin: 0;
-    word-wrap: normal;
+    white-space: pre;
     background-color: transparent;
   }
 }

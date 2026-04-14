@@ -45,7 +45,7 @@
   ],
   "devDependencies": {
     "autoprefixer": "^10.5.0",
-    "bootstrap": "5.3.5",
+    "bootstrap": "5.3.8",
     "gscan": "^6.0.0",
     "npm-watch": "^0.13.0",
     "postcss": "^8.5.9",

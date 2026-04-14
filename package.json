@@ -44,7 +44,7 @@
     "ghost-theme"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.4.22",
+    "autoprefixer": "^10.5.0",
     "bootstrap": "5.3.5",
     "gscan": "^5.2.1",
     "npm-watch": "^0.13.0",

@@ -1,8 +1,9 @@
 .post-card {
-  background-color: $post-card-bg-color;
   padding: 1rem;
+  background-color: $post-card-bg-color;
   border: $post-card-border;
   border-radius: 4px;
+  text-autospace: normal;
 
   & + & {
     margin-top: 1.2rem;

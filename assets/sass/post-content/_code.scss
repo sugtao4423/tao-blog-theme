@@ -4,6 +4,7 @@ code {
   white-space: break-spaces;
   background-color: $code-bg-color;
   border-radius: 6px;
+  text-autospace: no-autospace;
 }
 
 pre {
@@ -13,6 +14,7 @@ pre {
   border-radius: 6px;
   max-height: 44.5em;
   overflow: auto;
+  text-autospace: no-autospace;
 
   code {
     padding: 0;

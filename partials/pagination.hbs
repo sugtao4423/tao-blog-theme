@@ -1,0 +1,5 @@
+<nav id="pagination" data-page="{{page}}" data-pages="{{pages}}" data-base="{{page_url}}">
+  {{#if prev}}<a class="page" href="{{page_url prev}}">&larr;</a>{{/if}}
+  <div>{{page}} / {{pages}}</div>
+  {{#if next}}<a class="page" href="{{page_url next}}">&rarr;</a>{{/if}}
+</nav>

@@ -7,17 +7,5 @@
     {{> "post-card"}}
   {{/foreach}}
 
-  <nav id="pagination"></nav>
-
-  {{#with pagination}}
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const el = document.getElementById('pagination')
-      const page = Number("{{page}}")
-      const pages = Number("{{pages}}")
-      const createPageUrl = (num) => `{{page_url}}page/${num}/`
-      appendPagination(el, page, pages, createPageUrl)
-    })
-  </script>
-  {{/with}}
+  {{pagination}}
 </div>

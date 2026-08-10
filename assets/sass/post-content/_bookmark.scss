@@ -1,3 +1,10 @@
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
 @mixin post-content-bookmark {
   .kg-card.kg-bookmark-card {
     overflow: hidden;
@@ -8,12 +15,6 @@
 
     &:hover {
       background-color: $bookmark-bg-hover-color;
-    }
-
-    %line-clamp-base {
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
     }
 
     .kg-bookmark {
@@ -38,19 +39,17 @@
 
       // title in content
       &-title {
-        @extend %line-clamp-base;
+        @include line-clamp(2);
 
-        -webkit-line-clamp: 2;
         font-weight: 700;
         line-height: 1.4em;
       }
 
       // description in content
       &-description {
-        @extend %line-clamp-base;
+        @include line-clamp(1);
 
         margin-top: 0.2rem;
-        -webkit-line-clamp: 1;
         font-size: 0.85rem;
         color: $bookmark-description-text-color;
       }

@@ -1,19 +1,19 @@
 .post-metadata {
   display: flex;
   align-items: flex-start;
-  color: $post-meta-text-color;
   font-size: 0.95rem;
+  color: $post-meta-text-color;
 
   %icon-text {
     display: flex;
     align-items: center;
 
     &::before {
-      content: '';
       display: block;
       width: 1em;
       height: 1em;
       margin-right: 4px;
+      content: '';
       background-color: $post-meta-text-color;
       mask-repeat: no-repeat;
     }
@@ -23,22 +23,24 @@
     @extend %icon-text;
 
     &::before {
-      mask-image: url(../icons/clock.svg);
+      mask-image: url('../icons/clock.svg');
     }
   }
 
   .tags {
     @extend %icon-text;
+
     flex-wrap: wrap;
     margin-left: 1rem;
 
     &::before {
-      mask-image: url(../icons/tag.svg);
+      mask-image: url('../icons/tag.svg');
     }
 
     a {
       color: unset;
     }
+
     a + a {
       margin-left: 0.6rem;
     }

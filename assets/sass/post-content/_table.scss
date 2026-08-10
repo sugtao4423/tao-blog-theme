@@ -1,26 +1,28 @@
-table {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-  margin-bottom: 1rem;
+@mixin post-content-table {
+  table {
+    display: block;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
 
-  tr {
-    border-top: $table-border;
-    background-color: $table-bg-color;
+    tr {
+      background-color: $table-bg-color;
+      border-top: $table-border;
 
-    &:nth-child(2n) {
-      background-color: $table-bg-2n-color;
+      &:nth-child(2n) {
+        background-color: $table-bg-2n-color;
+      }
     }
-  }
 
-  th,
-  td {
-    border: $table-border;
-    padding: 6px 13px;
-  }
+    th,
+    td {
+      padding: 6px 13px;
+      border: $table-border;
+    }
 
-  th {
-    font-weight: 700;
-    text-align: center;
+    th {
+      font-weight: 700;
+      text-align: center;
+    }
   }
 }

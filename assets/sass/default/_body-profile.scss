@@ -1,14 +1,13 @@
-.profile {
-  padding: 1rem;
-  background-color: $profile-bg-color;
-  border-radius: 4px;
-  border: $profile-border;
+@mixin body-profile {
   display: flex;
   align-items: center;
-
   width: 40%;
   min-width: 10rem;
+  padding: 1rem;
   margin: 0 0 0 auto;
+  background-color: $profile-bg-color;
+  border: $profile-border;
+  border-radius: 4px;
   @include media-breakpoint-up(md) {
     width: 100%;
   }
@@ -28,8 +27,8 @@
   }
 
   &__links {
-    margin-top: 0.4rem;
     display: flex;
+    margin-top: 0.4rem;
 
     & > * {
       width: 1rem;
@@ -52,13 +51,15 @@
     }
 
     .homepage {
-      mask-image: url(../icons/house.svg);
+      mask-image: url('../icons/house.svg');
     }
+
     .twitter {
-      mask-image: url(../icons/twitter.svg);
+      mask-image: url('../icons/twitter.svg');
     }
+
     .github {
-      mask-image: url(../icons/github.svg);
+      mask-image: url('../icons/github.svg');
     }
   }
 }

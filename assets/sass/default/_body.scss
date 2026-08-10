@@ -1,5 +1,8 @@
+@import './body-profile';
+
 .site-main {
   @extend .container;
+
   padding-top: 2rem;
   padding-bottom: 2rem;
 
@@ -19,6 +22,8 @@
       margin-top: 0;
     }
 
-    @import './body-profile';
+    .profile {
+      @include body-profile;
+    }
   }
 }

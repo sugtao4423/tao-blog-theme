@@ -2,14 +2,14 @@
 $body-bg: #c0e8e8;
 $font-family-sans-serif:
   -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN',
-  'Hiragino Sans', Meiryo, sans-serif, 'Segoe UI Emoji';
+  'Hiragino Sans', meiryo, sans-serif, 'Segoe UI Emoji';
 $font-family-monospace:
   ui-monospace,
-  SFMono-Regular,
-  SF Mono,
-  Menlo,
-  Consolas,
-  Liberation Mono,
+  sfmono-regular,
+  sf mono,
+  menlo,
+  consolas,
+  liberation mono,
   monospace;
 
 $link-color: #2ac738;
@@ -48,7 +48,7 @@ $pagination-active-text-color: #fff;
 $pagination-border-color: #ccc;
 $pagination-border: 1px solid $pagination-border-color;
 
-$tag-page-icon-color: rgba(0, 0, 0, 0.75);
+$tag-page-icon-color: rgb(0 0 0 / 75%);
 
 $post-bg-color: #fff;
 $post-reading-time-text-color: #999;
@@ -68,17 +68,17 @@ $footer-link-color: #cfcfcf;
 // Post content
 // pre code
 $pre-bg-color: #f6f8fa;
-$code-bg-color: rgba(175, 184, 193, 0.2);
+$code-bg-color: rgb(175 184 193 / 20%);
 $code-font-size: 85%; // Override Bootstrap
 $code-color: #1f2328; // Override Bootstrap
 
 // bookmark
 $bookmark-bg-color: #fff;
-$bookmark-bg-hover-color: rgba(239, 246, 251, 0.7);
-$bookmark-border-color: rgba(92, 147, 187, 0.2);
+$bookmark-bg-hover-color: rgb(239 246 251 / 70%);
+$bookmark-border-color: rgb(92 147 187 / 20%);
 $bookmark-border: 1px solid $bookmark-border-color;
 $bookmark-description-text-color: #77838c;
-$bookmark-metadata-text-color: rgba(0, 0, 0, 0.8);
+$bookmark-metadata-text-color: rgb(0 0 0 / 80%);
 
 // table
 $table-bg-color: #fff;

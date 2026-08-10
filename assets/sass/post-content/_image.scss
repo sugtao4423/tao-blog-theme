@@ -1,28 +1,30 @@
-img {
-  width: 100%;
-  height: auto;
+@mixin post-content-image {
+  img {
+    width: 100%;
+    height: auto;
 
-  &:not(table img) {
+    &:not(table img) {
+      @include media-breakpoint-up(sm) {
+        width: 80%;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 60%;
+      }
+    }
+  }
+
+  .kg-width-wide img {
+    width: 100%;
+
     @include media-breakpoint-up(sm) {
-      width: 80%;
+      width: 90%;
     }
     @include media-breakpoint-up(lg) {
-      width: 60%;
+      width: 80%;
     }
   }
-}
 
-.kg-width-wide img {
-  width: 100%;
-
-  @include media-breakpoint-up(sm) {
-    width: 90%;
+  .kg-width-full img {
+    width: 100%;
   }
-  @include media-breakpoint-up(lg) {
-    width: 80%;
-  }
-}
-
-.kg-width-full img {
-  width: 100%;
 }

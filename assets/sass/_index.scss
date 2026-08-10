@@ -1,5 +1,6 @@
 .tag-page.tag-name {
   display: flex;
+  gap: 0.4rem;
   align-items: center;
   margin-bottom: 1.5rem;
   font-size: 1.75rem;
@@ -9,7 +10,6 @@
     display: block;
     width: 0.9em;
     height: 0.9em;
-    margin-right: 0.4rem;
     content: '';
     background-color: $tag-page-icon-color;
     mask-image: url('../icons/tag.svg');
@@ -21,13 +21,10 @@
   #pagination {
     display: flex;
     flex-wrap: nowrap;
+    gap: 0.5rem;
     align-items: baseline;
     margin-top: 1.6rem;
     overflow-x: auto;
-
-    > * + * {
-      margin-left: 0.5rem;
-    }
 
     a {
       color: $pagination-text-color;

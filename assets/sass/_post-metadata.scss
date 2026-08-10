@@ -1,48 +1,44 @@
 .post-metadata {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0 1rem;
   font-size: 0.95rem;
   color: $post-meta-text-color;
 
-  %icon-text {
+  .date,
+  .tags {
     display: flex;
+    gap: 4px;
     align-items: center;
 
     &::before {
       display: block;
+      flex-shrink: 0;
       width: 1em;
       height: 1em;
-      margin-right: 4px;
       content: '';
       background-color: $post-meta-text-color;
       mask-repeat: no-repeat;
     }
   }
 
-  .date {
-    @extend %icon-text;
-
-    &::before {
-      mask-image: url('../icons/clock.svg');
-    }
+  .date::before {
+    mask-image: url('../icons/clock.svg');
   }
 
   .tags {
-    @extend %icon-text;
-
-    flex-wrap: wrap;
-    margin-left: 1rem;
-
     &::before {
       mask-image: url('../icons/tag.svg');
     }
 
-    a {
-      color: unset;
-    }
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 0.6rem;
 
-    a + a {
-      margin-left: 0.6rem;
+      a {
+        color: unset;
+      }
     }
   }
 }

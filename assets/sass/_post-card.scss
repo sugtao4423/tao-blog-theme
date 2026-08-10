@@ -19,6 +19,7 @@
 
   .body {
     display: flex;
+    gap: 1rem;
     margin-top: 0.6rem;
 
     %thumbnail-size {
@@ -40,7 +41,6 @@
 
     .excerpt {
       max-height: calc($line-height-base * 6em);
-      margin-left: 1rem;
       overflow: hidden;
     }
   }

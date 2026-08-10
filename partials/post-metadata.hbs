@@ -2,9 +2,11 @@
   <div class="date">{{date format=dateFormat}}</div>
   {{#if tags}}
   <div class="tags">
-    {{#foreach tags}}
-    <a href="{{url}}">{{name}}</a>
-    {{/foreach}}
+    <div class="tags__inner">
+      {{#foreach tags}}
+      <a href="{{url}}">{{name}}</a>
+      {{/foreach}}
+    </div>
   </div>
   {{/if}}
 </div>

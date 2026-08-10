@@ -49,13 +49,13 @@
 
       .tweet-icon {
         display: flex;
+        gap: 0.4rem;
         align-items: center;
 
         &::before {
           display: block;
           width: 1rem;
           height: 1rem;
-          margin-right: 0.4rem;
           content: '';
           background-color: $share-text-color;
           mask-image: url('../icons/twitter.svg');

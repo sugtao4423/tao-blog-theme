@@ -27,6 +27,8 @@
 
     .gh-search {
       display: flex;
+      gap: 0.4rem;
+      align-items: center;
       padding: 0;
       appearance: unset;
       background: none;
@@ -34,16 +36,17 @@
 
       .text {
         display: none;
-        margin-right: 0.4rem;
         color: #fff;
         @include media-breakpoint-up(md) {
           display: block;
         }
       }
 
-      .icon {
+      &::after {
+        display: block;
         width: 1.5rem;
         height: 1.5rem;
+        content: '';
         background: url('../icons/search.svg') no-repeat center/contain;
       }
     }

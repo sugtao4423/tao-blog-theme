@@ -1,47 +1,49 @@
-details {
-  margin-bottom: 1rem;
-  background: $details-bg-color;
-  border: $details-border;
-  border-radius: 4px;
+@mixin post-content-details {
+  details {
+    margin-bottom: 1rem;
+    background: $details-bg-color;
+    border: $details-border;
+    border-radius: 4px;
 
-  & > summary {
-    padding: 0.8rem 1rem;
-    cursor: pointer;
-    list-style: none;
-
-    @include media-breakpoint-up(md) {
-      padding: 0.8rem 1.5rem;
-    }
-
-    &:hover {
-      background: $details-bg-hover-color;
-      transition: all linear 0.2s;
-    }
-
-    &::after {
-      float: right;
-      width: 0.6rem;
-      font-weight: 400;
-      color: $details-summary-icon-color;
-      content: '＋';
-    }
-  }
-
-  &[open] {
     & > summary {
+      padding: 0.8rem 1rem;
+      cursor: pointer;
+      list-style: none;
+
+      @include media-breakpoint-up(md) {
+        padding: 0.8rem 1.5rem;
+      }
+
+      &:hover {
+        background: $details-bg-hover-color;
+        transition: all linear 0.2s;
+      }
+
       &::after {
-        width: 0.4rem;
-        content: '−';
+        float: right;
+        width: 0.6rem;
+        font-weight: 400;
+        color: $details-summary-icon-color;
+        content: '＋';
       }
     }
 
-    & > div {
-      padding: 0.6rem 0.6rem 0;
-      overflow: auto;
-      font-size: 1rem;
+    &[open] {
+      & > summary {
+        &::after {
+          width: 0.4rem;
+          content: '−';
+        }
+      }
 
-      @include media-breakpoint-up(md) {
-        padding: 1rem 1rem 0;
+      & > div {
+        padding: 0.6rem 0.6rem 0;
+        overflow: auto;
+        font-size: 1rem;
+
+        @include media-breakpoint-up(md) {
+          padding: 1rem 1rem 0;
+        }
       }
     }
   }

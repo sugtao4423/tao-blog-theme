@@ -1,25 +1,27 @@
-code {
-  padding: 0.2em 0.4em;
-  margin: 0;
-  white-space: break-spaces;
-  background-color: $code-bg-color;
-  border-radius: 6px;
-  text-autospace: no-autospace;
-}
-
-pre {
-  max-height: 44.5em;
-  padding: 16px;
-  overflow: auto;
-  color: $code-color;
-  background-color: $pre-bg-color;
-  border-radius: 6px;
-  text-autospace: no-autospace;
-
+@mixin post-content-code {
   code {
-    padding: 0;
+    padding: 0.2em 0.4em;
     margin: 0;
-    white-space: pre;
-    background-color: transparent;
+    white-space: break-spaces;
+    background-color: $code-bg-color;
+    border-radius: 6px;
+    text-autospace: no-autospace;
+  }
+
+  pre {
+    max-height: 44.5em;
+    padding: 16px;
+    overflow: auto;
+    color: $code-color;
+    background-color: $pre-bg-color;
+    border-radius: 6px;
+    text-autospace: no-autospace;
+
+    code {
+      padding: 0;
+      margin: 0;
+      white-space: pre;
+      background-color: transparent;
+    }
   }
 }

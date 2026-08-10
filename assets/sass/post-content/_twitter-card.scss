@@ -1,8 +1,10 @@
-.twitter-tweet {
-  margin-top: 0 !important;
-  margin-bottom: 1rem !important;
-}
+@mixin post-content-twitter-card {
+  .twitter-tweet {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+  }
 
-.twitter-tweet + .twitter-tweet {
-  margin-top: -0.5rem !important;
+  .twitter-tweet + .twitter-tweet {
+    margin-top: -0.5rem !important;
+  }
 }

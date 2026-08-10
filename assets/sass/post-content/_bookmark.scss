@@ -1,99 +1,101 @@
-.kg-card.kg-bookmark-card {
-  overflow: hidden;
-  background-color: $bookmark-bg-color;
-  border: $bookmark-border;
-  border-radius: 6px;
-  transition: 0.2s;
-
-  &:hover {
-    background-color: $bookmark-bg-hover-color;
-  }
-
-  %line-clamp-base {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+@mixin post-content-bookmark {
+  .kg-card.kg-bookmark-card {
     overflow: hidden;
-  }
+    background-color: $bookmark-bg-color;
+    border: $bookmark-border;
+    border-radius: 6px;
+    transition: 0.2s;
 
-  .kg-bookmark {
-    // link wrapper
-    &-container {
-      display: flex;
-      align-items: center;
-      color: unset;
-      text-decoration: none;
+    &:hover {
+      background-color: $bookmark-bg-hover-color;
     }
 
-    // content in link wrapper
-    &-content {
-      flex: 1 1;
-      min-width: 0;
-      padding: 0.7em 1em;
-
-      @include media-breakpoint-up(md) {
-        padding: 0.8em 1.2em;
-      }
+    %line-clamp-base {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
-    // title in content
-    &-title {
-      @extend %line-clamp-base;
-
-      -webkit-line-clamp: 2;
-      font-weight: 700;
-      line-height: 1.4em;
-    }
-
-    // description in content
-    &-description {
-      @extend %line-clamp-base;
-
-      margin-top: 0.2rem;
-      -webkit-line-clamp: 1;
-      font-size: 0.85rem;
-      color: $bookmark-description-text-color;
-    }
-
-    // metadata in content
-    &-metadata {
-      display: flex;
-      align-items: center;
-      margin-top: 0.3rem;
-      font-size: 0.85rem;
-      color: $bookmark-metadata-text-color;
-
-      .kg-bookmark-icon {
-        width: auto;
-        height: 1.2em;
-        margin-right: 4px;
+    .kg-bookmark {
+      // link wrapper
+      &-container {
+        display: flex;
+        align-items: center;
+        color: unset;
+        text-decoration: none;
       }
 
-      .kg-bookmark-author + .kg-bookmark-publisher {
-        margin-left: 6px;
+      // content in link wrapper
+      &-content {
+        flex: 1 1;
+        min-width: 0;
+        padding: 0.7em 1em;
+
+        @include media-breakpoint-up(md) {
+          padding: 0.8em 1.2em;
+        }
       }
 
-      .kg-bookmark-author,
-      .kg-bookmark-publisher {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-    }
+      // title in content
+      &-title {
+        @extend %line-clamp-base;
 
-    // thumbnail in link wrapper
-    &-thumbnail {
-      width: 7.5rem;
-      height: 7.5rem;
-
-      @include media-breakpoint-up(md) {
-        width: auto;
-        max-width: 14.375rem;
+        -webkit-line-clamp: 2;
+        font-weight: 700;
+        line-height: 1.4em;
       }
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      // description in content
+      &-description {
+        @extend %line-clamp-base;
+
+        margin-top: 0.2rem;
+        -webkit-line-clamp: 1;
+        font-size: 0.85rem;
+        color: $bookmark-description-text-color;
+      }
+
+      // metadata in content
+      &-metadata {
+        display: flex;
+        align-items: center;
+        margin-top: 0.3rem;
+        font-size: 0.85rem;
+        color: $bookmark-metadata-text-color;
+
+        .kg-bookmark-icon {
+          width: auto;
+          height: 1.2em;
+          margin-right: 4px;
+        }
+
+        .kg-bookmark-author + .kg-bookmark-publisher {
+          margin-left: 6px;
+        }
+
+        .kg-bookmark-author,
+        .kg-bookmark-publisher {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      // thumbnail in link wrapper
+      &-thumbnail {
+        width: 7.5rem;
+        height: 7.5rem;
+
+        @include media-breakpoint-up(md) {
+          width: auto;
+          max-width: 14.375rem;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
   }

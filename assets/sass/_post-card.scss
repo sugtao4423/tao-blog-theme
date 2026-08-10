@@ -23,8 +23,8 @@
 
     %thumbnail-size {
       width: 150px;
-      height: 150px;
       max-width: 28vw;
+      height: 150px;
       max-height: 28vw;
     }
 
@@ -33,13 +33,14 @@
 
       img {
         @extend %thumbnail-size;
+
         object-fit: cover;
       }
     }
 
     .excerpt {
-      margin-left: 1rem;
       max-height: calc($line-height-base * 6em);
+      margin-left: 1rem;
       overflow: hidden;
     }
   }

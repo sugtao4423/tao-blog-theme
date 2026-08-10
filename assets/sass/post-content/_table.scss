@@ -1,12 +1,12 @@
 table {
   display: block;
+  margin-bottom: 1rem;
   overflow-x: auto;
   white-space: nowrap;
-  margin-bottom: 1rem;
 
   tr {
-    border-top: $table-border;
     background-color: $table-bg-color;
+    border-top: $table-border;
 
     &:nth-child(2n) {
       background-color: $table-bg-2n-color;
@@ -15,8 +15,8 @@ table {
 
   th,
   td {
-    border: $table-border;
     padding: 6px 13px;
+    border: $table-border;
   }
 
   th {

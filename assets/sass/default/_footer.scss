@@ -4,11 +4,11 @@
 
   &__inner {
     @extend .container;
-    text-align: center;
+
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
-
     font-size: 0.9rem;
+    text-align: center;
 
     a {
       color: $footer-link-color;

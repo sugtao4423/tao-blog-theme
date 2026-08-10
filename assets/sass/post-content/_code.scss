@@ -8,12 +8,12 @@ code {
 }
 
 pre {
+  max-height: 44.5em;
   padding: 16px;
+  overflow: auto;
   color: $code-color;
   background-color: $pre-bg-color;
   border-radius: 6px;
-  max-height: 44.5em;
-  overflow: auto;
   text-autospace: no-autospace;
 
   code {

@@ -1,8 +1,8 @@
 .kg-card.kg-bookmark-card {
+  overflow: hidden;
   background-color: $bookmark-bg-color;
   border: $bookmark-border;
   border-radius: 6px;
-  overflow: hidden;
   transition: 0.2s;
 
   &:hover {
@@ -38,41 +38,45 @@
     // title in content
     &-title {
       @extend %line-clamp-base;
-      line-height: 1.4em;
-      font-weight: 700;
+
       -webkit-line-clamp: 2;
+      font-weight: 700;
+      line-height: 1.4em;
     }
 
     // description in content
     &-description {
       @extend %line-clamp-base;
+
       margin-top: 0.2rem;
-      color: $bookmark-description-text-color;
-      font-size: 0.85rem;
       -webkit-line-clamp: 1;
+      font-size: 0.85rem;
+      color: $bookmark-description-text-color;
     }
 
     // metadata in content
     &-metadata {
-      margin-top: 0.3rem;
       display: flex;
       align-items: center;
-      color: $bookmark-metadata-text-color;
+      margin-top: 0.3rem;
       font-size: 0.85rem;
+      color: $bookmark-metadata-text-color;
 
       .kg-bookmark-icon {
         width: auto;
         height: 1.2em;
         margin-right: 4px;
       }
+
       .kg-bookmark-author + .kg-bookmark-publisher {
         margin-left: 6px;
       }
+
       .kg-bookmark-author,
       .kg-bookmark-publisher {
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
 

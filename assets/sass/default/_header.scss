@@ -1,18 +1,19 @@
 .site-header {
   height: 6rem;
-  background-image: url(../images/titleback.jpg);
+  background-image: url('../images/titleback.jpg');
   background-image: image-set(
-    url(../images/titleback.avif) type('image/avif'),
-    url(../images/titleback.webp) type('image/webp'),
-    url(../images/titleback.jpg) type('image/jpeg')
+    url('../images/titleback.avif') type('image/avif'),
+    url('../images/titleback.webp') type('image/webp'),
+    url('../images/titleback.jpg') type('image/jpeg')
   );
 
   &__inner {
     @extend .container;
-    height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 
     .site-title {
       font-size: 2.5rem;
@@ -25,17 +26,16 @@
     }
 
     .gh-search {
+      display: flex;
+      padding: 0;
       appearance: unset;
       background: none;
       border: none;
-      padding: 0;
-
-      display: flex;
 
       .text {
         display: none;
-        color: #fff;
         margin-right: 0.4rem;
+        color: #fff;
         @include media-breakpoint-up(md) {
           display: block;
         }
@@ -44,7 +44,7 @@
       .icon {
         width: 1.5rem;
         height: 1.5rem;
-        background: url(../icons/search.svg) no-repeat center/contain;
+        background: url('../icons/search.svg') no-repeat center/contain;
       }
     }
   }

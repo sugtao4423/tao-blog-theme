@@ -1,8 +1,8 @@
 details {
+  margin-bottom: 1rem;
   background: $details-bg-color;
   border: $details-border;
   border-radius: 4px;
-  margin-bottom: 1rem;
 
   & > summary {
     padding: 0.8rem 1rem;
@@ -19,26 +19,26 @@ details {
     }
 
     &::after {
-      content: '＋';
-      color: $details-summary-icon-color;
-      font-weight: 400;
       float: right;
       width: 0.6rem;
+      font-weight: 400;
+      color: $details-summary-icon-color;
+      content: '＋';
     }
   }
 
   &[open] {
     & > summary {
       &::after {
-        content: '−';
         width: 0.4rem;
+        content: '−';
       }
     }
 
     & > div {
+      padding: 0.6rem 0.6rem 0;
       overflow: auto;
       font-size: 1rem;
-      padding: 0.6rem 0.6rem 0;
 
       @include media-breakpoint-up(md) {
         padding: 1rem 1rem 0;
